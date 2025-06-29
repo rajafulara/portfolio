@@ -11,13 +11,13 @@ const Header = ({isDarkMode}) => {
         whileInView={{scale: 1}}
         transition={{duration: 0.8, type: 'spring', stiffness: 100}}
         >
-            <Image src={assets.profile_img} alt='' className='rounded-full w-32'/>
+            <Image src={assets.profile_img} alt='' className='rounded-full w-32' priority={true}/>
         </motion.div>
         <motion.h3
         initial={{y: -20, opacity: 0}}
         whileInView={{y: 0, opacity: 1}}
         transition={{duration: 0.6, delay:0.3}}
-        className='flex items-end gap-2 text-xl md:text-2xl mb-3 '>Hi! I'm Raja Fulara <Image src={assets.hand_icon} alt='' className='w-6'/></motion.h3>
+        className='flex items-end gap-2 text-xl md:text-2xl mb-3 '>Hi! I'm Raja Fulara <Image src={assets.hand_icon} alt='' className='w-6' priority={true}/></motion.h3>
         <motion.h1
         initial={{y: -30, opacity: 0}}
         whileInView={{y: 0, opacity: 1}}
@@ -34,12 +34,12 @@ const Header = ({isDarkMode}) => {
             initial={{y: 30, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
             transition={{duration: 0.6, delay:1}}
-            href="#contact" className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent'>contact me <Image src={assets.right_arrow_white} alt='' className='w-4'/></motion.a>
+            href="#contact" className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent'>contact me <Image src={assets.right_arrow_white} alt='' className='w-4' priority={true}/></motion.a>
             <motion.a
             initial={{y: 30, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
             transition={{duration: 0.6, delay:1.2}}
-            href="https://www.linkedin.com/in/rajafulara/" target="_blank" className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black'>my resume <Image src={assets.right_arrow_bold} alt='' className='w-4'/></motion.a>
+            href="https://www.linkedin.com/in/rajafulara/" target="_blank" className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black'>my resume <Image src={assets.right_arrow_bold} alt='' className='w-4' priority={true}/></motion.a>
         </div>
     </div>
   )
