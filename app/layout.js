@@ -11,8 +11,8 @@ const ovo = Ovo({
 });
 
 export const metadata = {
-  title: "Portfolio - Raja Fulara",
-  description: "Portfolio",
+  title: "Portfolio | Raja Fulara",
+  description: "Explore the portfolio of Raja Fulara, a skilled Web Developer. Discover creative solutions and innovative projects.",
 };
 
 export default function RootLayout({ children }) {
