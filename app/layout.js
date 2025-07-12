@@ -1,3 +1,5 @@
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
+
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 
@@ -11,8 +13,53 @@ const ovo = Ovo({
 });
 
 export const metadata = {
-  title: "Portfolio | Raja Fulara",
-  description: "Explore the portfolio of Raja Fulara, a skilled Web Developer. Discover creative solutions and innovative projects.",
+  metadataBase: new URL(baseUrl),
+  title: {
+    default: 'Portfolio | Raja Fulara',
+    template: '%s | Raja Fulara',
+  },
+  description: 'Explore the portfolio of Raja Fulara, a skilled Web Developer. Discover creative solutions and innovative projects.',
+  keywords: ['raja fulara', 'raja fulara portfolio', 'raja fulara official', 'rajafulara'],
+  authors: [{ name: 'Raja Fulara', url: baseUrl }],
+  creator: 'Raja Fulara',
+  publisher: 'Raja Fulara',
+  openGraph: {
+    title: 'Portfolio | Raja Fulara',
+    description: 'Explore the portfolio of Raja Fulara, a skilled Web Developer. Discover creative solutions and innovative projects.',
+    url: baseUrl,
+    siteName: 'Raja Fulara',
+    images: [
+      {
+        url: `${baseUrl}/favicon.ico`,
+        alt: 'Open Graph Image | Raja Fulara',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  alternates: {
+    canonical: baseUrl,
+    languages: {
+      'en-US': `${baseUrl}/`,
+    },
+  },
+  robots: { robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-snippet': -1,
+    },
+  },
+  icons: {
+    icon: `${baseUrl}/favicon.ico`,
+    shortcut: `${baseUrl}/favicon.ico`,
+    apple: `${baseUrl}/favicon.ico`,
+  },
 };
 
 export default function RootLayout({ children }) {
