@@ -43,7 +43,7 @@ export const metadata = {
       'en-US': `${baseUrl}/`,
     },
   },
-  robots: { robots: {
+  robots: {
     index: true,
     follow: true,
     nocache: true,
