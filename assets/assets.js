@@ -94,14 +94,14 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: 'https://github.com/rajafulara/' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: 'https://github.com/rajafulara/' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: 'https://github.com/rajafulara/' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: 'https://github.com/rajafulara/' },
+    { icon: assets.web_icon, title: 'Web development', description: "Let's build a website that's as awesome as you are! Custom designs that bring your brand to life and make your online presence shine.", link: '#contact' },
+    { icon: assets.mobile_icon, title: 'App development', description: "Got an app idea? Let's make it happen! I'll build a mobile app that's user-friendly, intuitive, and gets the job done.", link: '#contact' },
+    { icon: assets.ui_icon, title: 'UI/UX design', description: "Good design is all about making things easy and enjoyable to use. I'll craft interfaces that are both beautiful and functional, so your users will love interacting with your product.", link: '#contact' },
+    { icon: assets.graphics_icon, title: 'Graphics design', description: "Your brand's visual identity is everything! I'll create logos, graphics, and marketing materials that capture your unique style and make you stand out from the crowd.", link: '#contact' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, React Js, Next Js'},
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, ReactJS'},
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor of Computer Applications' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
