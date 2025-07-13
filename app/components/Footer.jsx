@@ -8,7 +8,7 @@ const Footer = ({isDarkMode}) => {
         <div className='text-center'>
         <a href="#top" className="py-2.5">Raja Fulara</a>
         <div className='w-max flex items-center gap-2 mx-auto'>
-        <Image src={isDarkMode? assets.mail_icon_dark: assets.mail_icon} alt='' className='w-6'/>
+        <Image src={isDarkMode? assets.mail_icon_dark: assets.mail_icon} alt='mail_icon' className='w-6'/>
         rajafulara.rf@gmail.com
         </div>
         <div className='text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6'>
