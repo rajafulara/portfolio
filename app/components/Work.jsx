@@ -43,7 +43,7 @@ const Work = ({isDarkMode}) => {
                             <p className='text-sm text-gray-700'>{projects.description}</p>
                         </div>
                         <div className='border border-black rounded-full w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
-                            <Image src={assets.send_icon} alt='' className='w-5'/>
+                            <Image src={assets.send_icon} alt='send_icon' className='w-5'/>
                         </div>
                     </div>
                 </motion.div>
@@ -55,7 +55,7 @@ const Work = ({isDarkMode}) => {
         whileInView={{opacity: 1}}
         transition={{duration: 0.5, delay: 1.1}}
         href="https://github.com/rajafulara/" target='_blank' className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover'>
-            Show more <Image src={isDarkMode? assets.right_arrow_bold_dark: assets.right_arrow_bold} alt='' className='w-4'/>
+            Show more <Image src={isDarkMode? assets.right_arrow_bold_dark: assets.right_arrow_bold} alt='right_arrow_bold' className='w-4'/>
         </motion.a>
     </motion.div>
   )
