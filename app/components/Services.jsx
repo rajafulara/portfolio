@@ -26,7 +26,7 @@ className="text-center mb-2 text-lg">What i offer</motion.h4>
         whileInView={{opacity: 1}}
         transition={{duration: 0.5, delay: 0.7}}
         className="text-center max-w-2xl mx-auto mt-5 mb-12">
-            I am a frontend developer from Uttarakhand, India with 2 years of exprience in multiple frontend projects.
+            So, what can I do for you? As a frontend developer, I'm all about building websites and apps that are both beautiful and functional. Whether you need a custom website, a web application, or just a little bit of frontend magic, I'm here to help.
         </motion.p>
         <motion.div
         initial={{opacity: 0}}
