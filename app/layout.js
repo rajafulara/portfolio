@@ -34,15 +34,19 @@ export const metadata = {
         alt: 'Open Graph Image | Raja Fulara',
       },
     ],
-    locale: 'en_US',
+    locale: 'en_IN',
     type: 'website',
   },
-  alternates: {
-    canonical: baseUrl,
-    languages: {
-      'en-US': `${baseUrl}/`,
-    },
+
+  twitter: {
+  card: 'summary_large_image',
+  title: 'Portfolio | Raja Fulara',
+  description: 'Explore the portfolio of Raja Fulara, a skilled Web Developer. Discover creative solutions and innovative projects.',
+  images: [`${baseUrl}/favicon.ico`],
   },
+  
+  canonical: baseUrl,
+  
   robots: {
     index: true,
     follow: true,
