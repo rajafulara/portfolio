@@ -31,7 +31,7 @@ const About = ({isDarkMode}) => {
             whileInView={{opacity: 1, scale: 1}}
             transition={{duration: 0.6}}
             className='w-64 sm:w-80 rounded-3xl max-w-none'>
-                <Image src={assets.user_image} alt='' className='w-full rounded-3xl' priority={true}/>
+                <Image src={assets.user_image} alt='user image' className='w-full rounded-3xl' priority={true}/>
             </motion.div>
             <motion.div
             initial={{opacity: 0}}
@@ -70,7 +70,7 @@ const About = ({isDarkMode}) => {
                         <motion.li
                         whileHover={{scale: 1.1}}
                         key={index} className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500'>
-                            <Image src={tool} alt='' className='w-5 sm:w-7'/>
+                            <Image src={tool} alt='tool' className='w-5 sm:w-7'/>
                         </motion.li>
                     ))}
                 </motion.ul>
