@@ -17,7 +17,7 @@ const Header = ({isDarkMode}) => {
         initial={{y: -20, opacity: 0}}
         whileInView={{y: 0, opacity: 1}}
         transition={{duration: 0.6, delay:0.3}}
-        className='flex items-end gap-2 text-xl md:text-2xl mb-3 '>Hi! I'm Raja Fulara <Image src={assets.hand_icon} alt='hand_icon' className='w-6' priority={true}/></motion.h3>
+        className='flex items-end gap-2 text-xl md:text-2xl mb-3 '>Hi! I'm Raja Fulara.<Image src={assets.hand_icon} alt='hand_icon' className='w-6' priority={true}/></motion.h3>
         <motion.h1
         initial={{y: -30, opacity: 0}}
         whileInView={{y: 0, opacity: 1}}
@@ -27,7 +27,7 @@ const Header = ({isDarkMode}) => {
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 0.6, delay:0.7}}
-        className='max-w-2xl mx-auto'>I am a frontend developer from Uttarakhand, India with 2 years of exprience in multiple frontend projects.</motion.p>
+        className='max-w-2xl mx-auto'>I'm a frontend developer from Nainital, Uttarakhand. With 2 years of exprience in multiple frontend projects.</motion.p>
 
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
             <motion.a
