@@ -75,6 +75,26 @@ export default function RootLayout({ children }) {
         className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
       >
         {children}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  "name": "Raja Fulara",
+  "url": "https://rajafulara.me",
+  "image": "https://media.licdn.com/dms/image/v2/D5603AQHzaFj4Jio2UA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727598419842?e=1758153600&v=beta&t=O2DC34o-_pbf1LQ5cS4abqDFsV3UzJKjmcjrm20cG34",
+  "sameAs": [
+    "https://www.linkedin.com/in/rajafulara",
+    "https://github.com/rajafulara"
+  ],
+  "jobTitle": "Professional",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Organization"
+  }  
+}
+</script>
+  
       </body>
     </html>
   );
