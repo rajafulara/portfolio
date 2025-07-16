@@ -1,5 +1,4 @@
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
-
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 
@@ -11,6 +10,8 @@ const ovo = Ovo({
   subsets: ["latin"],
   weight: ["400"],
 });
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
 
 export const metadata = {
   metadataBase: new URL(baseUrl),
@@ -84,6 +85,9 @@ export default function RootLayout({ children }) {
         className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
       >
         {children}
+      </body>
+
+        <GoogleAnalytics gaId="G-KCZ9X4MQ7T" />
 
 <script
         type="application/ld+json"
@@ -91,8 +95,7 @@ export default function RootLayout({ children }) {
           __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
         }}
       />
-  
-      </body>
+        
     </html>
   );
 }
