@@ -20,17 +20,17 @@ export const metadata = {
   },
   description: 'Explore the portfolio of Raja Fulara, a skilled Web Developer. Discover creative solutions and innovative projects.',
   keywords: ['raja fulara', 'raja fulara portfolio', 'raja fulara official', 'rajafulara'],
-  authors: [{ name: 'Raja Fulara', url: baseUrl }],
+  authors: [{ name: 'Raja Fulara', url: '/' }],
   creator: 'Raja Fulara',
   publisher: 'Raja Fulara',
   openGraph: {
     title: 'Portfolio | Raja Fulara',
     description: 'Explore the portfolio of Raja Fulara, a skilled Web Developer. Discover creative solutions and innovative projects.',
-    url: baseUrl,
+    url: '/',
     siteName: 'Raja Fulara',
     images: [
       {
-        url: `${baseUrl}/favicon.ico`,
+        url: '/favicon.ico',
         alt: 'Open Graph Image | Raja Fulara',
       },
     ],
@@ -42,10 +42,12 @@ export const metadata = {
   card: 'summary_large_image',
   title: 'Portfolio | Raja Fulara',
   description: 'Explore the portfolio of Raja Fulara, a skilled Web Developer. Discover creative solutions and innovative projects.',
-  images: [`${baseUrl}/favicon.ico`],
+  images: ['/favicon.ico'],
   },
   
-  canonical: baseUrl,
+  alternates: {
+    canonical: '/',
+  },
   
   robots: {
     index: true,
@@ -60,9 +62,9 @@ export const metadata = {
     },
   },
   icons: {
-    icon: `${baseUrl}/favicon.ico`,
-    shortcut: `${baseUrl}/favicon.ico`,
-    apple: `${baseUrl}/favicon.ico`,
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
 };
 
