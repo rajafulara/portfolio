@@ -13,26 +13,30 @@ const ovo = Ovo({
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
 
+const pageTitle = 'Raja Fulara | Portfolio Website'
+
+const pageDescription = 'Explore the portfolio of Raja Fulara, a skilled Web Developer based in India. Discover creative solutions and innovative projects in this website.'
+
 export const metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Portfolio | Raja Fulara',
+    default: pageTitle,
     template: '%s | Raja Fulara',
   },
-  description: 'Explore the portfolio of Raja Fulara, a skilled Web Developer. Discover creative solutions and innovative projects.',
-  keywords: ['raja fulara', 'raja fulara portfolio', 'raja fulara official', 'rajafulara'],
+  description: pageDescription,
+  keywords: ['raja fulara', 'raja fulara portfolio', 'raja fulara portfolio website', 'raja fulara official', 'rajafulara'],
   authors: [{ name: 'Raja Fulara', url: '/' }],
   creator: 'Raja Fulara',
   publisher: 'Raja Fulara',
   openGraph: {
-    title: 'Portfolio | Raja Fulara',
-    description: 'Explore the portfolio of Raja Fulara, a skilled Web Developer. Discover creative solutions and innovative projects.',
+    title: pageTitle,
+    description: pageDescription,
     url: '/',
     siteName: 'Raja Fulara',
     images: [
       {
         url: '/favicon.ico',
-        alt: 'Open Graph Image | Raja Fulara',
+        alt: 'Raja Fulara | Open Graph Image',
       },
     ],
     locale: 'en_IN',
@@ -41,8 +45,8 @@ export const metadata = {
 
   twitter: {
   card: 'summary_large_image',
-  title: 'Portfolio | Raja Fulara',
-  description: 'Explore the portfolio of Raja Fulara, a skilled Web Developer. Discover creative solutions and innovative projects.',
+  title: pageTitle,
+  description: pageDescription,
   images: ['/favicon.ico'],
   },
   
