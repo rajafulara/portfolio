@@ -30,7 +30,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
         <Image src={assets.header_bg_color} alt='header_bg_color' className='w-full' priority={true}/>
     </div>
         <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll?"bg-white/50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20":""}`}>
-        <a href="#top" className="px-0 py-2.5 lg:px-10 lg:mr-[60px]">Portfolio</a>
+        <a href="#top" className="px-0 py-2.5 lg:px-10 lg:mr-[55px]">Raja Fulara</a>
 
             <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll?"":"bg-white/50 shadow-sm dark:border dark:border-white/50 dark:bg-transparent"}`}>
                 <li><a href="#top">Home</a></li>
